@@ -1,0 +1,1354 @@
+* {
+    outline-color: transparent;
+    outline: none !important;
+    -webkit-font-smoothing: antialiased;
+    scrollbar-width: none;
+}
+
+select:required + label::after {
+    content: '*';
+    position: absolute;
+    left: 100%;
+    margin-left: 1ch;
+}
+
+input:required + label::after {
+    content: '*';
+    position: absolute;
+    left: 100%;
+    margin-left: 1ch;
+}
+
+textarea {
+    resize: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-selection,
+::selection {
+    color: white;
+    background: #cb9274;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+.footer__nav-wrp {
+    z-index: 19;
+}
+
+.site-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-login h1 {
+    align-self: center;
+    margin: revert;
+}
+
+/*.preferred-vendors__nav span {*/
+/*    cursor: default;*/
+/*}*/
+
+.vendors-type__slide_link.active {
+    color: #cb9274;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.vendors-type__slide_link.active:hover {
+    color: #fff;
+}
+
+.local-vendor__category.active {
+    color: #cb9274;
+    text-decoration: underline;
+}
+
+.local-vendor__category.active:hover {
+    color: #828282;
+}
+
+.location__reset_btn {
+    height: 12px;
+    width: 12px;
+    background: url('/images/plus.svg') center center no-repeat;
+    background-size: 12px;
+    display: inline-block;
+    transform: rotate(45deg) translate(0px, 2px);
+}
+
+.location__reset_btn:hover {
+    background: url('/images/plus--active.svg') center center no-repeat;
+}
+
+/*     NEW style   */
+
+.vendor-profile__location-can_travel {
+    color: #828282;
+}
+
+.additional__a_role {
+    color: #828282;
+    text-transform: none;
+}
+
+.additional__a_role:hover {
+    color: #cb9274;
+    text-transform: none;
+}
+
+.process_gif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .95);
+    z-index: 3; /* При необходимости выставить свои значения */
+    display: none;
+}
+
+.section.real-weddings__blog {
+    position: relative;
+}
+
+.process_gif img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    width: 40px;
+}
+
+.preferred-vendors__nav_link.disabled:hover {
+    opacity: 1;
+    font-weight: 400;
+    color: #bdbdbd;
+}
+
+.link_pagi {
+    color: inherit;
+}
+
+.preferred-vendors__nav_link.preferred-vendors__nav_link--pages.w--current a {
+    cursor: default;
+}
+
+.LM_btn {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.real-weddings__post_p p {
+    color: #828282;
+    font-size: 0.9375vw;
+    line-height: 1.8em;
+}
+
+.blog-post__hero_slider-overlay {
+    cursor: pointer;
+}
+
+.list-view .empty {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.resetBtnFilter {
+    background: transparent;
+    padding: 0;
+}
+
+.additional__p.additional__p-color.additional__p--photo-popup {
+    font-size: 0.72vw;
+    line-height: 1;
+}
+
+
+.invise {
+    display: none;
+}
+
+.btn_block__showhide {
+    overflow: hidden;
+    text-align: center;
+    height: auto;
+    opacity: 1;
+}
+
+.show_all_vendors {
+    padding: 10px 5px;
+}
+
+.vendors-type__link.w-button:hover {
+    text-decoration: none;
+}
+
+.vend_type {
+    height: auto;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.hide {
+    height: 0;
+    opacity: 0;
+    margin: 0;
+    position: absolute;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mouse {
+    0% {
+        transform: translateY(-20%);
+    }
+    100% {
+        transform: translateY(20%);
+    }
+}
+
+.btn--outline:hover .btn__arrow-icon.brown {
+    filter: brightness(2);
+}
+
+.menu-wrp {
+    position: fixed;
+    left: 0;
+    top: -15px;
+    z-index: 1;
+    display: block;
+    width: 100vw;
+    height: 120vh;
+    padding-bottom: 30vh;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+}
+
+.menu-btn.w-nav-button {
+    z-index: 3 !important;
+}
+
+.logo__text:not(.logo__text--no-rotation), .label__recomended {
+    animation: rotation 10s infinite linear;
+}
+
+.remodal {
+    max-width: unset;
+    padding: 0;
+    background: unset;
+}
+
+.remodal-overlay {
+    background: rgba(0, 0, 0, 0.7) !important;
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+}
+
+.remodal-wrapper {
+    padding: 0 !important;
+}
+
+.remodal-bg {
+    position: relative;
+    z-index: 1
+}
+
+.slick-list {
+    overflow-x: visible;
+}
+
+.slick-dots {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: calc(4.0625vw - 18px);
+}
+
+.slick-dots li button {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4F4F4F;
+    margin: 0 6px;
+    padding: 0;
+    transition: .3s;
+    font-size: 0;
+    border: none;
+    outline-color: transparent;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+h2.dark-section__heading {
+    text-transform: none;
+}
+
+h2.advertising__dark-section_heading {
+    text-transform: none;
+}
+
+.step__checkbox-wrp {
+    transition: all 0.3s ease;
+}
+
+/* убрать лого на фото */
+.blog-post__hero_images-logo-wrp {
+    display: none;
+}
+
+.vendor-spotlight__link.btn-redmore-photo {
+    /*opacity: 0;*/
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.cz.w-form .empty {
+    font-size: 14px;
+}
+
+.real-wedd-tabs-wrp {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hide-dn {
+    display: none !important;
+}
+
+.btn-redmore-photo {
+    margin-bottom: 3.125vw;
+    color: #ba866a;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 700;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.btn-redmore-photo:hover {
+    opacity: 0.7 !important;
+}
+
+@media screen and (min-width: 1440px) {
+    .btn-redmore-photo {
+        margin-bottom: 3.125vw;
+        color: #ba866a;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .remodal__photo-popup .additional__p.additional__p-color.additional__p--photo-popup {
+        font-size: 0.72916vw;
+    }
+    .vendor-spotlight__link {
+        font-size: 0.72916vw;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .blog-post__hero_track {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .mouse__wheel {
+        animation: mouse 2s infinite ease-in-out alternate;
+    }
+
+    .menu__links._desktop {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu__links._mobile {
+        display: none;
+    }
+
+    .review__text {
+        min-height: 72px;
+    }
+
+    .have-you-been-wrp .remodal__radio-heading {
+        text-align: left;
+    }
+
+    .receive-the-jb__label.w-form-label {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .preferred-vendors__nav.homepage.pagination {
+        margin-top: 40px;
+    }
+
+    .real-weddings__filters-col_heading {
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+
+    .real-weddings__filters-col_heading:hover {
+        opacity: .8;
+    }
+
+    .real-weddings__post_p p {
+        font-size: 16px;
+    }
+
+    .menu__links._desktop {
+        display: none;
+    }
+
+    .menu__links._mobile {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu {
+        margin-top: 70px;
+        overflow: auto;
+        padding-top: 105px;
+        padding-left: 40px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .LM_btn {
+        width: 100%;
+    }
+
+    .additional__controls.blog-post__hero_controls.local-vendors__post_controls .demo_additional__controls_btn-list {
+        flex-direction: column;
+    }
+
+    .additional__controls.blog-post__hero_controls.local-vendors__post_controls .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* LIGHTBOX */
+@media (min-width: 768px) {
+    .w-lightbox-group .w-lightbox-image,
+    .w-lightbox-figure .w-lightbox-image {
+        max-width: 82.3vw;
+        max-height: 65vh;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    iframe.w-lightbox-embed {
+        max-width: 940px;
+        max-height: 529px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.w-lightbox {
+    cursor: pointer;
+}
+
+.w-lightbox-caption {
+    position: absolute;
+    right: 0;
+    bottom: initial;
+    left: 0;
+    padding: .5em 1em;
+    background: none;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    color: #ffffff;
+    cursor: initial;
+    opacity: 0;
+}
+
+.w-lightbox-caption * {
+    color: #ffffff;
+}
+
+.w-lightbox-caption a {
+    text-decoration: none;
+    color: #CB9274;
+}
+
+.w-lightbox-caption a:hover {
+    text-decoration: underline;
+}
+
+.w-lightbox-caption, .w-lightbox-caption * {
+    font-family: aktiv-grotesk, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.w-lightbox-group .w-lightbox-figure,
+.w-lightbox-frame .w-lightbox-figure {
+    width: 85vw;
+}
+
+@media (max-width: 768px) {
+    .w-lightbox-group .w-lightbox-figure,
+    .w-lightbox-frame .w-lightbox-figure {
+        width: 95vw;
+    }
+
+    .w-lightbox-group .w-lightbox-image,
+    .w-lightbox-figure .w-lightbox-image {
+        max-height: 63vh;
+        max-width: 72vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .w-lightbox-caption, .w-lightbox-caption * {
+        font-family: aktiv-grotesk, sans-serif;
+        font-size: 10px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1025px) and (min-height: 1365px) and (max-height: 1367px) {
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 0;
+        margin-bottom: 1.5vw;
+    }
+
+    .section.trending .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 0;
+        margin-bottom: 0.8vw;
+    }
+}
+
+@media screen and (min-width: 1365px) and (max-width: 1367px) and (min-height: 1023px) and (max-height: 1024px) {
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 0;
+        margin-bottom: 1.5vw;
+    }
+
+    .section.trending .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 0;
+        margin-bottom: 0.8vw;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1025px) and (min-height: 767px) and (max-height: 769px) {
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 0;
+        margin-bottom: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 769px) and (min-height: 1023px) and (max-height: 1025px) {
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 0;
+        margin-bottom: 1.5vw;
+    }
+}
+
+/* 06072021 */
+@media screen and (max-width: 991px) {
+
+    /* отцентровать фото по центру в лайтбоксе */
+    .remodal__photo-popup.popup-photo__mob {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        justify-content: center;
+    }
+
+    /* для крестика в лайтбоксах */
+    /*.remodal__custom-close_wrp {*/
+    /*    position: absolute;*/
+    /*}*/
+    .hero__additional_tab.hero__additional_tab-1 {
+        grid-column-gap: 20px;
+    }
+}
+
+
+/* ================================== */
+/* открыть ховер для карточек и убрать иконки
+    удалить это свойство
+    .card__additional {
+        display: none !important;
+    }
+*/
+
+/*.additional__controls {*/
+/*    display: none !important;*/
+/*}*/
+
+/* =========================================== */
+
+.additional__p-wrp .additional__p,
+.additional__p-wrp .additional__p * {
+    font-size: 12px;
+}
+
+.additional__p-wrp .additional__p_link {
+    color: #cb9274;
+}
+
+.additional__p-wrp .additional__p_vendors .additional__p_link {
+    color: #828282;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.additional__p-wrp .additional__p_vendors .additional__p_link.additional__p_link_more {
+    color: #cb9274;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.additional__p-wrp .additional__p_vendors .additional__p_link:hover {
+    color: #cb9274;
+}
+
+.mosaic-slider__mask .mosaic-slide__lb:hover + .mosaic-slider__mask + .mosaic-slider-conrtol--prev {
+    z-index: -1;
+}
+
+.card__additional {
+    -webkit-transition: z-Index 500ms ease, opacity 500ms ease;
+    transition: z-Index 500ms ease, opacity 500ms ease;
+}
+
+/* ----- START before hide fav-icons block ----- */
+.additional__h-wrp {
+    margin-right: 0;
+}
+
+/* ----- END before hide fav-icons block ----- */
+
+
+/* ----- START изменение стилей кнопок поделится ----- */
+.demo_additional__controls_btn {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.0416vw;
+    padding-right: 1.25vw;
+    padding-left: 1.25vw;
+    cursor: pointer;
+}
+
+.news .demo_additional__controls_btn {
+    margin-bottom: 0;
+}
+
+.demo_additional__controls_btn-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 1.25vw;
+    padding-left: 1.25vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    /*background-color: #fff;*/
+    /*border: 1px rgba(0,0,0,.1) solid;*/
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.photo-popup__slider-text-icon_wrp {
+    position: relative;
+}
+
+.additional__controls.blog-post__hero_controls.local-vendors__post_controls {
+    top: 0;
+}
+
+.additional__controls.blog-post__image-controls .additional__controls,
+.additional__controls.wedding-card__controls.news__additional .additional__controls,
+.additional__controls.real-weddings__post_controls .additional__controls,
+.additional__controls.card__controls .additional__controls,
+.additional__controls.blog-post__hero_controls .additional__controls {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.card__additional.card__additional--grey .additional__controls {
+    top: 1vw;
+    right: -.8vw;
+}
+
+.post-gallery__heading-wrp .additional__controls.real-weddings__post_controls,
+.post-gallery__heading-wrp .additional__controls.real-weddings__post_controls,
+.section--post-gallery .card__additional.post-gallery__additional .additional__controls.blog-post__hero_controls {
+    top: 1.3vw;
+    right: 0;
+    bottom: auto;
+}
+
+/*.post-gallery__heading {*/
+/*    margin-right: 9vw;*/
+/*}*/
+
+/*.additional__controls.additional__controls--hor.post-gallery__image-controls .additional__controls {*/
+/*    position: relative;*/
+/*}*/
+
+.card__additional.card__additional--grey .demo_additional__controls_btn-list,
+.additional__controls.blog-post__image-controls .demo_additional__controls_btn-list,
+.additional__controls.card__controls .demo_additional__controls_btn-list,
+.additional__controls.blog-post__hero_controls .demo_additional__controls_btn-list {
+    flex-direction: column;
+    padding-right: .5vw;
+    padding-left: .5vw;
+}
+
+.card__additional.card__additional--grey .demo_additional__controls_btn-list,
+.card__additional.card__additional--grey .additional__controls_btn-list {
+    background-color: #f5f5f5;
+}
+
+.demo_additional__controls_btn-list .additional__controls_btn-list-item {
+    margin-right: 0;
+    margin-bottom: .5vw;
+}
+
+.news .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+    margin-bottom: 0;
+}
+
+.section.see-more .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+    margin-bottom: .5vw;
+}
+
+/*.card__additional.card__additional--grey .demo_additional__controls_btn-list .additional__controls_btn-list-item:not(:last-child),*/
+.additional__controls.wedding-card__controls.news__additional .demo_additional__controls_btn-list .additional__controls_btn-list-item:not(:last-child),
+.additional__controls.real-weddings__post_controls .demo_additional__controls_btn-list .additional__controls_btn-list-item:not(:last-child) {
+    margin-right: .8vw;
+}
+
+.card__additional.card__additional--grey .demo_additional__controls_btn-list .additional__controls_btn-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.additional__controls.wedding-card__controls.news__additional .demo_additional__controls_btn,
+.additional__controls.wedding-card__controls.news__additional .demo_additional__controls_btn-list {
+    padding-left: 0;
+}
+
+.additional__controls_btn-list-item.copy {
+    font-family: 'Fa solid 900', sans-serif;
+    margin-right: 0;
+}
+
+.blog-post__hero_p,
+.photo-popup__slider-text {
+    min-height: 125px;
+}
+
+.trending .featured-in__paragraph {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__additional {
+    padding: 1.5625vw 5.08333vw 1.8229vw 2.08333vw;
+}
+
+/*.post-gallery__additional .additional__h-wrp {*/
+/*    margin-right: 3vw;*/
+/*}*/
+
+.photo-popup__slider-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+}
+
+
+@media screen and (min-width: 991px) {
+    .section.real-weddings__blog .additional__controls.real-weddings__post_controls .additional__controls {
+        top: 20px;
+    }
+
+    .additional__controls.real-weddings__post_controls .demo_additional__controls_btn,
+    .additional__controls.real-weddings__post_controls .demo_additional__controls_btn-list {
+        padding-right: 0;
+    }
+
+    .post-gallery__hor-scroll-inner .post-gallery__text-wrp .additional__p a,
+    .post-gallery__hor-scroll-inner .additional__p.real-weddings__post_additional a {
+        font-size: 0.78125vw;
+    }
+}
+
+/* ----- END изменение стилей кнопок поделится ----- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /*.post-gallery__heading {*/
+    /*    margin-right: 0vw;*/
+    /*    font-size: 55px;*/
+    /*}*/
+    /*.section.section--post-gallery {*/
+    /*    min-height: auto;*/
+    /*    padding: 160px 40px 50px;*/
+    /*}*/
+    /*.post-gallery__hor-scroll-inner {*/
+    /*    position: static;*/
+    /*    overflow: visible;*/
+    /*    height: auto;*/
+    /*    min-width: auto;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.post-gallery__heading-wrp {*/
+    /*    position: relative;*/
+    /*    left: 0vw;*/
+    /*    top: 0vw;*/
+    /*    z-index: 2;*/
+    /*    width: 100%;*/
+    /*}*/
+    /*.post-gallery__hor-scroll {*/
+    /*    z-index: auto;*/
+    /*    margin-top: 30px;*/
+    /*    margin-bottom: 0vw;*/
+    /*    padding-right: 0vw;*/
+    /*    padding-left: 0vw;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.post-gallery__text-wrp {*/
+    /*    width: auto;*/
+    /*    min-width: auto;*/
+    /*    margin-right: 0vw;*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
+    /*.post-gallery__p {*/
+    /*    margin-bottom: 20px;*/
+    /*    font-size: 16px;*/
+    /*}*/
+    /*.post-gallery__p p {*/
+    /*    font-size: 16px;*/
+    /*}*/
+    /* конф */
+    /*.section--post-gallery  .additional__p {*/
+    /*    font-size: 14px;*/
+    /*}*/
+    /*.section--post-gallery .additional__p a{*/
+    /*    font-size: 14px;*/
+    /*}*/
+    /*.post-gallery {*/
+    /*    display: block;*/
+    /*}*/
+    /*.post-gallery__image-wrp {*/
+    /*    margin-right: 0vw;*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
+    /*.post-gallery__tip-wrp {*/
+    /*    display: none;*/
+    /*}*/
+    /*.post-gallery__tip {*/
+    /*    margin-bottom: 30px;*/
+    /*    font-size: 12px;*/
+    /*    line-height: 1.4em;*/
+    /*}*/
+    /*.post-gallery__image {*/
+    /*    width: 100%;*/
+    /*}*/
+    /*.post-gallery__contols {*/
+    /*    position: static;*/
+    /*    order: -1;*/
+    /*}*/
+    /*.btn.post-gallery__back {*/
+    /*    width: auto;*/
+    /*    margin-bottom: 20px;*/
+    /*    padding-top: 0em;*/
+    /*    padding-bottom: 0em;*/
+    /*    font-size: 14px;*/
+    /*}*/
+}
+
+/*@media screen and (max-width: 1366px) {*/
+/*    .section--post-gallery .additional__p,*/
+/*    .section--post-gallery .additional__p a {*/
+/*        font-size: 14px;*/
+/*        line-height: 1.7em;*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 1024px) {
+    .remodal__photo-popup__slider-img_box--sticky-inner:hover .remodal__photo-popup__icon-lup {
+        opacity: 0;
+        display: none;
+    }
+
+    .additional__controls_btn.additional__controls_btn--hor {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .additional__controls_btn {
+        height: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .additional__controls_btn-icon-wrp {
+        width: 18px;
+        height: 18px;
+    }
+
+    .additional__controls_btn.additional__controls_btn--hor {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .additional__controls_btn {
+        height: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .subheading {
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+
+    .additional__p a, .hero__additional_tab .additional__p a {
+        font-size: 14px;
+    }
+
+    .post-gallery__text-wrp .additional__p a,
+    .additional__p.real-weddings__post_additional a {
+        font-size: 14px;
+    }
+
+    .card__additional.card__additional--grey .additional__controls_btn-list--grey {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .progress-wrp {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .additional__controls.card__controls .demo_additional__controls_btn-list,
+    .additional__controls.blog-post__hero_controls .demo_additional__controls_btn-list {
+        flex-direction: inherit;
+    }
+
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .additional__controls.real-weddings__post_controls .demo_additional__controls_btn-list .additional__controls_btn-list-item:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .card__additional.card__additional--grey .demo_additional__controls_btn-list,
+    .additional__controls.blog-post__image-controls .demo_additional__controls_btn-list,
+    .additional__controls.card__controls .demo_additional__controls_btn-list,
+    .additional__controls.blog-post__hero_controls .demo_additional__controls_btn-list {
+        flex-direction: inherit;
+        padding: 0;
+    }
+
+    .additional__controls.mobile-mosaic-slide__controls .demo_additional__controls_btn-list .additional__controls_btn-list-item,
+    .additional__controls.blog-post__image-controls .demo_additional__controls_btn-list .additional__controls_btn-list-item,
+    .card__additional.card__additional--grey .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .additional__controls.mobile-mosaic-slide__controls .additional__controls {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .additional__controls.mobile-mosaic-slide__controls .demo_additional__controls_btn,
+    .additional__controls.mobile-mosaic-slide__controls .demo_additional__controls_btn-list {
+        padding: 0;
+    }
+
+    .photo-popup__slider-text {
+        min-height: 0px;
+    }
+
+    .additional__p.real-weddings__post_additional {
+        margin-right: 10.8125vw;
+    }
+
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        font-size: 16px;
+        /*margin-right: 10px;*/
+        /*margin-left: 10px;*/
+        margin-right: 0;
+        margin-left: 1.5vw;
+    }
+
+    /*.post-gallery__image-wrp .demo_additional__controls_btn,*/
+    /*.post-gallery__image-wrp .demo_additional__controls_btn-list {*/
+    /*    padding: 0;*/
+    /*    margin-bottom: 0;*/
+    /*}*/
+    /*.post-gallery__image-wrp .additional__controls {*/
+    /*    top: 0;*/
+    /*}*/
+    /*.post-gallery__heading-wrp .additional__controls.real-weddings__post_controls,*/
+    /*.post-gallery__heading-wrp .additional__controls.real-weddings__post_controls {*/
+    /*    top: auto;*/
+    /*    right: -20px;*/
+    /*    bottom: -60px;*/
+    /*}*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .blog-post .blog-post__grid {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*.section--post-gallery  .additional__p {*/
+    /*    font-size: 12px;*/
+    /*}*/
+    /*.section--post-gallery .additional__p a{*/
+    /*    font-size: 12px;*/
+    /*}*/
+    .btn.real-wedd-tab {
+        min-height: 50px;
+        letter-spacing: 0.215em;
+    }
+
+    .additional__p {
+        font-size: 12px;
+    }
+
+    .additional__p a, .hero__additional_tab .additional__p a {
+        font-size: 12px;
+    }
+
+    .post-gallery__text-wrp .additional__p a {
+        font-size: 12px;
+    }
+
+    .hero__additional_tab {
+        grid-row-gap: 10px;
+    }
+
+    .real-weddings__post_text-wrp .additional__controls.real-weddings__post_controls {
+        right: -20px;
+        top: -5px;
+    }
+}
+
+.additional__p-wrp .additional__p,
+.additional__p-wrp .additional__p * {
+    /*font-size: 12px;*/
+    /*font-size: 0.78125vw;*/
+    font-size: 0.625vw;
+}
+
+.additional__p-wrp .additional__p_link {
+    color: #cb9274;
+}
+
+.additional__p-wrp .additional__p_vendors .additional__p_link {
+    color: #828282;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.additional__p-wrp .additional__p_vendors .additional__p_link.additional__p_link_more {
+    color: #cb9274;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.additional__p-wrp .additional__p_vendors .additional__p_link:hover {
+    color: #cb9274;
+}
+
+.mosaic-slider__mask .mosaic-slide__lb:hover + .mosaic-slider__mask + .mosaic-slider-conrtol--prev {
+    z-index: -1;
+}
+
+.hide-dn {
+    display: none !important;
+}
+
+.card__additional {
+    -webkit-transition: z-Index 500ms ease, opacity 500ms ease;
+    transition: z-Index 500ms ease, opacity 500ms ease;
+}
+
+/* ----- START before hide fav-icons block ----- */
+.additional__h-wrp {
+    margin-right: 0;
+}
+
+/* ----- END before hide fav-icons block ----- */
+
+
+@font-face {
+    font-family: 'Fa solid 900';
+    src: url('/fonts/fa-solid-900.woff2') format('woff2'), url('/fonts/fa-solid-900.woff') format('woff'), url('/fonts/fa-solid-900.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/************** START embed-style.php **************/
+.remodal__photo-popup__slider_content_sticky-wrp--100vh {
+    position: static;
+    top: 0px;
+    display: flex;
+    min-height: auto;
+    align-items: center;
+    object-fit: fill;
+    padding-top: 6.13vw;
+    padding-bottom: 6.13vw;
+}
+
+.remodal__photo-popup__slider-img {
+    object-fit: cover;
+}
+
+.remodal__photo-popup__slider_content_sticky-wrp {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+    .demo_additional__controls_btn {
+        padding: 0;
+    }
+
+    .demo_additional__controls_btn-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-bottom: 13px;
+    }
+
+    .post-gallery__hor-scroll-inner .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-bottom: 0;
+    }
+
+    .remodal__photo-popup__slider-img_wrp {
+        margin-bottom: 0px;
+    }
+
+    .remodal__photo-popup__slider-img_box--sticky {
+        width: 100%;
+    }
+
+    .menu-wrp {
+        top: 0;
+    }
+
+    .remodal__custom-close.remodal__custom-close--photo-popup {
+        right: 40px;
+        right: 15px;
+    }
+
+    .remodal__photo-popup__slider-img_box--sticky-inner {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .preferred-vendors__post_category {
+        font-size: 11px;
+    }
+
+    .additional__p.additional__p-color.additional__p--photo-popup {
+        font-size: 11px;
+    }
+
+    .photo-popup__slider-text p {
+        font-size: 13px;
+    }
+
+    .subheading.post-gallery__subheading,
+    .subheading.real-weddings__post_subheading,
+    .subheading.editor-picks__slide_subheading,
+    .subheading.lifestyle__subheading {
+        font-size: 0.72916vw;
+    }
+
+    .post-gallery__hor-scroll-inner .subheading.post-gallery__subheading {
+        font-size: 12px;
+    }
+
+    .additional__p.real-weddings__post_additional a.additional__a_role {
+        font-size: 0.78125vw;
+    }
+
+    .nice-select {
+        font-size: 1.1vw;
+        line-height: 1.4em;
+    }
+
+    .additional__controls.real-weddings__post_controls .demo_additional__controls_btn-list .additional__controls_btn-list-item:not(:last-child) {
+        /*margin-right: 1.8vw;*/
+        margin-right: 0.8vw;
+    }
+
+    .additional__controls_btn-list-item {
+        font-size: 12px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+    .brand {
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cz .brand {
+        width: 180px;
+    }
+
+    .subheading.post-gallery__subheading,
+    .subheading.real-weddings__post_subheading,
+    .subheading.editor-picks__slide_subheading,
+    .subheading.lifestyle__subheading {
+        font-size: 1.563vw;
+    }
+
+    .additional__p.real-weddings__post_additional a.additional__a_role {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .subheading.post-gallery__subheading,
+    .subheading.real-weddings__post_subheading,
+    .subheading.editor-picks__slide_subheading,
+    .subheading.lifestyle__subheading {
+        font-size: 10px;
+    }
+
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-height: 767px) and (max-height: 769px) and (min-width: 1023px) and (max-width: 1025px) {
+    .nav-link {
+        font-size: 8px !important;
+    }
+
+    .additional__controls.real-weddings__post_controls .demo_additional__controls_btn-list .additional__controls_btn-list-item:not(:last-child) {
+        margin-right: 1.5vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-bottom: 0.5vw;
+    }
+
+    .photo-popup__slider-text-icon_wrp .demo_additional__controls_btn-list .additional__controls_btn-list-item,
+    .blog-post__slide_track .demo_additional__controls_btn-list .additional__controls_btn-list-item,
+    .blog-post__grid_track .demo_additional__controls_btn-list .additional__controls_btn-list-item,
+    .blog-post__image-wrp .demo_additional__controls_btn-list .additional__controls_btn-list-item,
+    .blog-post__hero_headings-wrp .demo_additional__controls_btn-list .additional__controls_btn-list-item {
+        margin-bottom: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 769px) and (min-height: 1023px) and (max-height: 1025px) {
+    .footer__input-wrp .btn.btn--small {
+        margin-bottom: 20px;
+    }
+
+    [data-wf-page="5f02f4d7169298673d367683"] .footer__input-wrp .btn.btn--small,
+    [data-wf-page="5f3b7e7318af646d271832eb"] .footer__input-wrp .btn.btn--small,
+    [data-wf-page="5f0dbe9426fda1cb24f91c53"] .footer__input-wrp .btn.btn--small,
+    [data-wf-page="5f0ecadc2a3bf09f24efb791"] .footer__input-wrp .btn.btn--small,
+    [data-wf-page="5f0ec9debb7b0a292792d325"] .footer__input-wrp .btn.btn--small,
+    [data-wf-page="5ef197c832018ba9ddc5fc7d"] .footer__input-wrp .btn.btn--small {
+        margin-bottom: 0;
+    }
+}
+
+
+/************** END embed-style.php **************/
