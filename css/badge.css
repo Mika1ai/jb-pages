@@ -165,7 +165,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #cb9274;
-  background-image: url("/images/copy-icon.svg");
+  background-image: url("./images/copy-icon.svg");
   background-position: left center;
   background-repeat: no-repeat;
   transition: filter 0.3s ease;
@@ -350,7 +350,7 @@
   letter-spacing: 0.215em;
   text-transform: uppercase;
   color: #ffffff;
-  background-image: url("/images/download-icon.svg");
+  background-image: url("./images/download-icon.svg");
   background-position: right center;
   background-repeat: no-repeat;
   opacity: 0.4;
