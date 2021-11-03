@@ -1,8 +1,8 @@
 "use strict";
 
-const swiper = new Swiper(".swiper", {
+const swiperPhotos = new Swiper(".swiper", {
   slidesPerView: "auto",
-  spaceBetween: 60,
+  spaceBetween: 0,
   speed: 500,
   navigation: {
     nextEl: ".badge-slider__slider-button.next",
@@ -21,3 +21,12 @@ creditsBtn.addEventListener("click", function (e) {
     creditsBtn.classList.remove("copied");
   }, 700);
 });
+
+// $(".badge-slider__slider-wrapper").slick({
+//   dots: false,
+//   infinite: false,
+//   speed: 500,
+//   variableWidth: true,
+//   prevArrow: ".badge-slider__slider-button.prev",
+//   nextArrow: ".badge-slider__slider-button.next",
+// });
