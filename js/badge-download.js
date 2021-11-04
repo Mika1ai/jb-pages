@@ -16,7 +16,6 @@ if (window.innerWidth >= 480) {
   );
   function activeSlide({ slides, activeIndex }) {
     photo = slides[activeIndex].querySelector("img");
-    console.log(photo);
     downloadBtn.href = photo.getAttribute("src");
   }
 
