@@ -4,6 +4,7 @@ const swiperPhotos = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 0,
   speed: 500,
+  simulateTOuch: false,
   navigation: {
     nextEl: ".badge-slider__slider-button.next",
     prevEl: ".badge-slider__slider-button.prev",

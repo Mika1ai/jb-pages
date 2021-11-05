@@ -150,7 +150,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-inline: -3vw;
+  margin-inline: -6vw;
 }
 .badge-badge__inscription {
   position: absolute;
@@ -311,19 +311,27 @@
 }
 @media screen and (max-width: 1280px) {
   .badge-badge__badges {
+    max-width: 80vw;
+  }
+  .badge-badge__badge:first-child,
+  .badge-badge__badge:last-child {
+    order: -1;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .badge-badge__badges {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 5vw;
+    max-width: 100%;
+  }
+  .badge-badge__badges .badge-badge__badge {
+    order: unset;
   }
   .badge-badge__badge:last-child {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-template-rows: auto;
-  }
-}
-@media screen and (max-width: 991px) {
-  .badge-badge__badges {
-    max-width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -564,6 +572,8 @@
   }
 }
 @media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 479px) {
   .badge-slider__heading {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -572,8 +582,6 @@
     grid-row-start: 3;
     grid-column-start: 2;
   }
-}
-@media screen and (max-width: 479px) {
   .badge-slider__slider-download {
     display: none;
   }
