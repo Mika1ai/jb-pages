@@ -125,8 +125,13 @@
   margin-bottom: clamp(20px, 2.08vw, 2.08vw);
 }
 .badge-badge__badge-inscription {
+  margin: 0;
   cursor: pointer;
   transition: filter 0.3s ease;
+  padding: 0.5em 0;
+}
+.badge-badge__badge-inscription.underline {
+  text-decoration: underline;
 }
 .badge-badge__badge-inscription:hover {
   filter: brightness(0.9);
@@ -152,25 +157,8 @@
   position: relative;
   margin-inline: -6vw;
 }
-.badge-badge__inscription {
-  position: absolute;
-  font-size: 10px;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  left: 50%;
-  color: #ffffff;
-  transform: translateX(-50%);
-}
-.badge-badge__inscription--hexagon {
-  top: 45px;
-}
-.badge-badge__inscription--circle {
-  top: 37px;
-}
-.badge-badge__inscription--rect {
-  top: 25px;
+.badge-badge__badge-image {
+  transition: opacity 0.2s ease;
 }
 .badge-badge__badge-colors {
   margin-top: clamp(20px, 2.08vw, 2.08vw);
@@ -178,22 +166,18 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 15px;
 }
-.badge-badge__badge-color input {
-  display: none;
-}
-.badge-badge__badge-color span {
-  display: block;
+.badge-badge__badge-color {
   width: 24px;
   height: 24px;
   cursor: pointer;
 }
-.badge-badge__badge-color#black span {
+.badge-badge__badge-color#black {
   background-color: #000000;
 }
-.badge-badge__badge-color#gold span {
+.badge-badge__badge-color#gold {
   background-color: #cb9274;
 }
-.badge-badge__badge-color#white span {
+.badge-badge__badge-color#white {
   background-color: #ffffff;
   box-shadow: inset 0 0 0 1px #000000;
 }
@@ -246,62 +230,6 @@
 }
 .badge-badge__badge-copy:not(::after):hover {
   filter: brightness(0.9);
-}
-
-#badge .badge-badge__bg,
-#badge .badge-badge__color,
-#badge .badge-badge__border,
-#badge .badge-badge__inscription,
-#badge + .badge-badge__inscription {
-  transition: all 0.3s linear;
-}
-
-#badge.black .badge-badge__bg {
-  fill: #000000;
-}
-#badge.black .badge-badge__color {
-  fill: #ffffff;
-}
-#badge.black g {
-  opacity: 0.2;
-}
-#badge.black .badge-badge__border {
-  stroke: #ffffff;
-}
-#badge.black + .badge-badge__inscription {
-  color: #ffffff;
-}
-
-#badge.gold .badge-badge__bg {
-  fill: #cb9274;
-}
-#badge.gold .badge-badge__color {
-  fill: #ffffff;
-}
-#badge.gold g {
-  opacity: 0.1;
-}
-#badge.gold .badge-badge__border {
-  stroke: #ffffff;
-}
-#badge.gold + .badge-badge__inscription {
-  color: #ffffff;
-}
-
-#badge.white .badge-badge__bg {
-  fill: #ffffff;
-}
-#badge.white .badge-badge__color {
-  fill: #000000;
-}
-#badge.white g {
-  opacity: 0.1;
-}
-#badge.white .badge-badge__border {
-  stroke: #000000;
-}
-#badge.white + .badge-badge__inscription {
-  color: #000000;
 }
 
 @media screen and (max-width: 1440px) {
@@ -362,7 +290,6 @@
     content: none;
   }
 }
-/* //////////////////// */
 
 /* slider */
 .section--badge-slider {

@@ -22,12 +22,3 @@ creditsBtn.addEventListener("click", function (e) {
     creditsBtn.classList.remove("copied");
   }, 700);
 });
-
-// $(".badge-slider__slider-wrapper").slick({
-//   dots: false,
-//   infinite: false,
-//   speed: 500,
-//   variableWidth: true,
-//   prevArrow: ".badge-slider__slider-button.prev",
-//   nextArrow: ".badge-slider__slider-button.next",
-// });

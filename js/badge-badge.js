@@ -3,28 +3,43 @@
 const badges = document.querySelectorAll(".badge-badge__badge");
 
 for (let i = 0; i < badges.length; i++) {
-  // inscription
-  const inscrBtn = badges[i].querySelectorAll(
+  // changeBadge
+  const badge = {
+    type: badges[i].id,
+    color: "gold",
+    inscr: "as-seen-on",
+  };
+
+  const badgeImage = badges[i].querySelector(".badge-badge__badge-image");
+  const colorBtns = badges[i].querySelectorAll(".badge-badge__badge-color");
+  const inscrBtns = badges[i].querySelectorAll(
     ".badge-badge__badge-inscription"
   );
-  const inscrField = badges[i].querySelector(".badge-badge__inscription");
 
-  for (let j = 0; j < inscrBtn.length; j++) {
-    inscrBtn[j].addEventListener("click", () => {
-      inscrField.textContent = inscrBtn[j].querySelector("span").textContent;
-    });
+  function changeBadge(btns, btnsType) {
+    for (let n = 0; n < btns.length; n++) {
+      btns[n].addEventListener("click", function (e) {
+        if (btnsType === "inscr") {
+          for (let j = 0; j < btns.length; j++) {
+            btns[j].classList.remove("underline");
+          }
+          btns[n].classList.add("underline");
+        }
+        badge[btnsType] = e.currentTarget.id;
+        badgeImage.style.opacity = "0";
+        setTimeout(() => {
+          badgeImage.setAttribute(
+            "src",
+            `./images/badges/${badge.type}--${badge.color}--${badge.inscr}.png`
+          );
+          badgeImage.style.opacity = "1";
+        }, 200);
+      });
+    }
   }
 
-  // colors
-  const colorsBtn = badges[i].querySelectorAll(".badge-badge__badge-color");
-  const badge = badges[i].querySelector("#badge");
-
-  for (let n = 0; n < colorsBtn.length; n++) {
-    colorsBtn[n].addEventListener("click", () => {
-      badge.removeAttribute("class");
-      badge.classList.add(`${colorsBtn[n].id}`);
-    });
-  }
+  changeBadge(inscrBtns, "inscr");
+  changeBadge(colorBtns, "color");
 
   // copy
   const copyBtn = badges[i].querySelector(".badge-badge__badge-copy");
