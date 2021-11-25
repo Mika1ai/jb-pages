@@ -109,10 +109,11 @@
   padding-left: 1.125rem;
   transform: translate(-50%, -50%);
   font-size: 0.75rem;
-  line-height: 1.1em;
+  letter-spacing: 0.215em;
+  line-height: 1.2em;
   color: #ffffff;
-  background-image: url('/images/view.svg');
-  background-position: 0% 50%;
+  background-image: url('../images/view.svg');
+  background-position: 0% 0%;
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
