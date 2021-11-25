@@ -1,32 +1,32 @@
 /* fonts */
 
 @font-face {
-  font-family: "Saoldisplay";
+  font-family: 'Saoldisplay';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/SaolDisplay-Light.woff2") format("woff2"),
-    url("../fonts/SaolDisplay-Light.woff") format("woff");
+  src: url('../fonts/SaolDisplay-Light.woff2') format('woff2'),
+    url('../fonts/SaolDisplay-Light.woff') format('woff');
 }
 @font-face {
-  font-family: "Saoldisplay";
+  font-family: 'Saoldisplay';
   font-style: italic;
   font-weight: 300;
-  src: url("../fonts/SaolDisplay-LightItalic.woff2") format("woff2"),
-    url("../fonts/SaolDisplay-LightItalic.woff") format("woff");
+  src: url('../fonts/SaolDisplay-LightItalic.woff2') format('woff2'),
+    url('../fonts/SaolDisplay-LightItalic.woff') format('woff');
 }
 @font-face {
-  font-family: "Saoldisplay";
+  font-family: 'Saoldisplay';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/SaolDisplay-Regular.woff2") format("woff2"),
-    url("../fonts/SaolDisplay-Regular.woff") format("woff");
+  src: url('../fonts/SaolDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/SaolDisplay-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: "Saoldisplay";
+  font-family: 'Saoldisplay';
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/SaolDisplay-RegularItalic.woff2") format("woff2"),
-    url("../fonts/SaolDisplay-RegularItalic.woff") format("woff");
+  src: url('../fonts/SaolDisplay-RegularItalic.woff2') format('woff2'),
+    url('../fonts/SaolDisplay-RegularItalic.woff') format('woff');
 }
 
 /* hero */
@@ -192,13 +192,13 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #cb9274;
-  background-image: url("../images/copy-icon.svg");
+  background-image: url('../images/copy-icon.svg');
   background-position: left center;
   background-repeat: no-repeat;
   transition: filter 0.3s ease;
 }
 .badge-badge__badge-copy::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: 0;
@@ -209,7 +209,7 @@
   background-color: #cb9274;
 }
 .badge-badge__badge-copy::after {
-  content: "copied";
+  content: 'copied';
   position: absolute;
   z-index: 2;
   display: flex;
@@ -278,7 +278,7 @@
     padding-bottom: 0;
   }
   .badge-badge__badge::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -314,7 +314,7 @@
   margin-bottom: 0;
 }
 .badge-slider__heading::before {
-  content: "";
+  content: '';
   display: inline-block;
   position: relative;
   margin-bottom: 0.2em;
@@ -351,7 +351,7 @@
   letter-spacing: 0.215em;
   text-transform: uppercase;
   color: #ffffff;
-  background-image: url("../images/download-icon.svg");
+  background-image: url('../images/download-icon.svg');
   background-position: right center;
   background-repeat: no-repeat;
   opacity: 0.4;
@@ -437,7 +437,7 @@
   filter: brightness(0.9);
 }
 .badge-slider__credits-copy::after {
-  content: "copied";
+  content: 'copied';
   position: absolute;
   z-index: 2;
   top: 0;
